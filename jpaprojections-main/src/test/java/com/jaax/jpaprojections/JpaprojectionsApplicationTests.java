@@ -7,7 +7,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 class JpaprojectionsApplicationTests {
 
 	@Test
-	void contextLoads() {
-	}
-
+   void contextLoads() {
+        assertThat(myService).isNotNull(); // Verifica que el bean MyService no sea nulo
+    }
 }
